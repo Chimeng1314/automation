@@ -5,7 +5,7 @@ import base64
 
 # 识别验证码
 def identify(mo,code,model):
-    url = f"http://cn-hk-bgp-4.ofalias.net:50818/inference_wps_{mo}"
+    url = f"http://localhost:18880/inference_wps_{mo}"
     payload = code
     headers = {
         'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
